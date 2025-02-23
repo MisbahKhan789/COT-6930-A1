@@ -20,16 +20,16 @@ How can different prompting techniques enhance the automation of requirement ana
 
 #### What is already known about this topic
 
-* AI-powered requirement analysis can be automated using NLP techniques.
+* AI-powered requirement analysis can be automated using GenAI.
 * Traditional requirement gathering is manual, time-consuming, and often inconsistent.
 * Prompting techniques such as Zero-Shot, Few-Shot, Chain of Thought, Meta, and Self-Consistency influence AI performance in requirement extraction.
 * The possibility of optimizing requirement analysis with structured and self-evaluative AI-generated solutions.
 
 #### What this research is exploring
 
-* We employ Self-Consistency prompting to compare multiple solution paths and select the most effective one.
-* We are analyzing the performance of five prompting techniques to determine their impact on AI-driven requirement analysis.
-* We are exploring how automation can enhance adaptability, scalability, and efficiency in requirement gathering for educational AI chatbots.
+* Self-Consistency prompting is used to compare multiple solution paths and select the most effective one.
+* The performance of five prompting techniques is analyzed and compared to determine their impact on AI-driven requirement analysis.
+* Exploration of how automation can enhance adaptability, scalability, and efficiency in requirement gathering for educational AI chatbots.
 
 #### Implications for practice
 
@@ -39,7 +39,7 @@ How can different prompting techniques enhance the automation of requirement ana
 
 # Research Method
 
-We tested five prompting techniques—Zero-Shot, Few-Shot, Chain of Thought, Meta, and Self-Consistency—by applying them to the automation of requirement analysis for a Study Companion Bot. Each method was evaluated based on:
+Five prompting techniques are experimented with (Zero-Shot, Few-Shot, Chain of Thought, Meta, and Self-Consistency) by applying them to the automation of requirement analysis for a Study Companion Bot. Each method was evaluated based on:
 
 - Depth of analysis
 - Accuracy of extracted requirements
@@ -49,7 +49,7 @@ We tested five prompting techniques—Zero-Shot, Few-Shot, Chain of Thought, Met
 
 The study included AI-generated solutions from each technique, followed by an analysis of their effectiveness in streamlining requirement automation.
 
-
+Function parameters were changed in order to improve the quality of the model responses. For example, the context size (num_ctx) was changed to 8192, which was initially limited to 100 by default. 
 # Results
 
 ### Comparison of Techniques
