@@ -50,8 +50,8 @@ Five prompting techniques are experimented with (Zero-Shot, Few-Shot, Chain of T
 The study included AI-generated solutions from each technique, followed by an analysis of their effectiveness in streamlining requirement automation.
 
 Function parameters were changed in order to improve the quality of the model responses. 
-      The context size (num_ctx) was changed to 8192, which was initially limited to 100. This allows the model to understand the context of the prompt better, due to a larger context window size. 
-      The number of tokens the model is allowed to generate (num_predict) was changed to 8192, which was initially limited to 100 by default. This allows the model to generate a detailed answer, as is required by this use case.
+ - The context size (num_ctx) was changed to 8192, which was initially limited to 100. This allows the model to understand the context of the prompt better, due to a larger context window size. 
+ - The number of tokens the model is allowed to generate (num_predict) was changed to 8192, which was initially limited to 100 by default. This allows the model to generate a detailed answer, as is required by this use case.
       
 # Results
 
