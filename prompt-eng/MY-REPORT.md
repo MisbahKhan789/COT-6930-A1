@@ -52,6 +52,7 @@ The study included AI-generated solutions from each technique, followed by an an
 Function parameters were changed in order to improve the quality of the model responses. 
  - The context size (num_ctx) was changed to 8192, which was initially limited to 100. This allows the model to understand the context of the prompt better, due to a larger context window size. 
  - The number of tokens the model is allowed to generate (num_predict) was changed to 8192, which was initially limited to 100 by default. This allows the model to generate a detailed answer, as is required by this use case.
+ - Temperature was set to 0 to reduce the randomness or creativity in the responses. A preference of stability and consistency in response was considered more preferable for usecase.
       
 # Results
 
