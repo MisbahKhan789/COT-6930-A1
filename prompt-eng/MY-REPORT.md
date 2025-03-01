@@ -65,6 +65,7 @@ Function parameters were changed in order to improve the quality of the model re
 | **Chain of Thought** | ✦✦✦✦✦ | ✦✦✦✦☆ | ✦✦✦✦☆ | ✦✦✦✦☆ | **59.986s** |
 | **Meta**             | ✦✦✦✦☆ | ✦✦✦✦☆ | ✦✦✦✦☆ | ✦✦✦✦☆ | **60.178s** |
 | **Self-Consistency** | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦✦ | **31.584s** |
+| **Role-Play** | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦✦ | **37.688s** |
 
 
 ### Key Findings
