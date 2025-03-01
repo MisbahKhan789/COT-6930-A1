@@ -20,16 +20,16 @@ How can different prompting techniques enhance the automation of requirement ana
 
 #### What is already known about this topic
 
-* AI-powered requirement analysis can be automated using NLP techniques.
+* AI-powered requirement analysis can be automated using GenAI.
 * Traditional requirement gathering is manual, time-consuming, and often inconsistent.
 * Prompting techniques such as Zero-Shot, Few-Shot, Chain of Thought, Meta, and Self-Consistency influence AI performance in requirement extraction.
 * The possibility of optimizing requirement analysis with structured and self-evaluative AI-generated solutions.
 
 #### What this research is exploring
 
-* We employ Self-Consistency prompting to compare multiple solution paths and select the most effective one.
-* We are analyzing the performance of five prompting techniques to determine their impact on AI-driven requirement analysis.
-* We are exploring how automation can enhance adaptability, scalability, and efficiency in requirement gathering for educational AI chatbots.
+* Self-Consistency prompting is used to compare multiple solution paths and select the most effective one.
+* The performance of five prompting techniques is analyzed and compared to determine their impact on AI-driven requirement analysis.
+* Exploration of how automation can enhance adaptability, scalability, and efficiency in requirement gathering for educational AI chatbots.
 
 #### Implications for practice
 
@@ -39,7 +39,7 @@ How can different prompting techniques enhance the automation of requirement ana
 
 # Research Method
 
-We tested five prompting techniques—Zero-Shot, Few-Shot, Chain of Thought, Meta, and Self-Consistency—by applying them to the automation of requirement analysis for a Study Companion Bot. Each method was evaluated based on:
+Five prompting techniques are experimented with (Zero-Shot, Few-Shot, Chain of Thought, Meta, and Self-Consistency) by applying them to the automation of requirement analysis for a Study Companion Bot. Each method was evaluated based on:
 
 - Depth of analysis
 - Accuracy of extracted requirements
@@ -49,7 +49,11 @@ We tested five prompting techniques—Zero-Shot, Few-Shot, Chain of Thought, Met
 
 The study included AI-generated solutions from each technique, followed by an analysis of their effectiveness in streamlining requirement automation.
 
-
+Function parameters were changed in order to improve the quality of the model responses. 
+ - The context size (num_ctx) was changed to 8192, which was initially limited to 100. This allows the model to understand the context of the prompt better, due to a larger context window size. 
+ - The number of tokens the model is allowed to generate (num_predict) was changed to 8192, which was initially limited to 100 by default. This allows the model to generate a detailed answer, as is required by this use case.
+ - Temperature was set to 0 to reduce the randomness or creativity in the responses. A preference of stability and consistency in response was considered more preferable for usecase.
+      
 # Results
 
 ### Comparison of Techniques
@@ -61,6 +65,7 @@ The study included AI-generated solutions from each technique, followed by an an
 | **Chain of Thought** | ✦✦✦✦✦ | ✦✦✦✦☆ | ✦✦✦✦☆ | ✦✦✦✦☆ | **59.986s** |
 | **Meta**             | ✦✦✦✦☆ | ✦✦✦✦☆ | ✦✦✦✦☆ | ✦✦✦✦☆ | **60.178s** |
 | **Self-Consistency** | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦✦ | ✦✦✦✦✦ | **31.584s** |
+| **Role-Play** | ✦✦✦✦☆ | ✦✦✦✦✦ | ✦✦✦✦☆ | ✦✦✦✦☆ | **37.688s** |
 
 
 ### Key Findings
@@ -70,6 +75,7 @@ The study included AI-generated solutions from each technique, followed by an an
 * Chain of Thought: Strong step-by-step breakdown but slower.
 * Meta: Provides structured reasoning but lacks evaluation of multiple paths.
 * Self-Consistency (Best Approach): Generates multiple solution paths, evaluates them, and selects the optimal one, making it the most effective.
+* Role-Play: The response is well-structured, persuasive, and technically sound. To improve, it could include more practical considerations such as tool recommendations, real-world challenges, and mitigation strategies for potential roadblocks.
 
 # Further research
 
