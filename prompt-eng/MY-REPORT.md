@@ -75,6 +75,7 @@ Function parameters were changed in order to improve the quality of the model re
 * Chain of Thought: Strong step-by-step breakdown but slower.
 * Meta: Provides structured reasoning but lacks evaluation of multiple paths.
 * Self-Consistency (Best Approach): Generates multiple solution paths, evaluates them, and selects the optimal one, making it the most effective.
+* Role-Play: The response is well-structured, persuasive, and technically sound. To improve, it could include more practical considerations such as tool recommendations, real-world challenges, and mitigation strategies for potential roadblocks.
 
 # Further research
 
